@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.2.min.css">
+<link rel="stylesheet" href="_assets/css/jqm-demos.css">
+<script src="js/jquery.js"></script>
+<script src="_assets/js/index.js"></script>
+<script src="js/jquery.mobile-1.4.2.min.js"></script>
+<script src="global.js"></script>
+<script src="index.js"></script>
+<title>Q&A Platform Example</title>
+</head>
+<body>
+
+	<div data-role="page" id="main">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<h1 id="header-title">Q&A Platform Example</h1>
+		</div>
+		<div role="main" class="ui-content">
+			<div class="ui-corner-all custom-corners">
+				<div class="ui-bar ui-bar-a" id="context-title">Q&A Platform Example</div>
+				<div class="ui-body ui-body-a" id="context-sub-msg">input email correctly, and press "connect" button.</div>
+			</div>
+
+			<br /> <input type="email" data-clear-btn="true" name="email" id="email" value="" placeholder="email@gmail.com"> <a id="login-btn" data-role="button" data-theme="b" data-corners="false">Connect</a>
+
+		</div>
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<h4>
+				<a href="https://plus.google.com/u/0/communities/114442945345780165506" target="_blank">GDG Daejeon</a>
+			</h4>
+		</div>
+
+		<div data-role="popup" data-theme="a" data-overlay-theme="b" class="ui-content" style="max-width: 340px; padding-bottom: 2em;" id="fail-popup">
+			<h3>Fail</h3>
+			<p>접속에 실패했습니다. 다시 시도해주세요^^</p>
+			<a data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-mini">Cancel</a>
+		</div>
+	</div>
+</body>
+</html>

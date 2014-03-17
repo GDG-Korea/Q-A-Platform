@@ -1,0 +1,38 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.2.min.css">
+<link rel="stylesheet" href="_assets/css/jqm-demos.css">
+<script src="js/jquery.js"></script>
+<script src="_assets/js/index.js"></script>
+<script src="js/jquery.mobile-1.4.2.min.js"></script>
+<script src="global.js"></script>
+<script src="list.js"></script>
+<title>Q&A Platform Example</title>
+</head>
+<body>
+	<div data-role="page" id="data">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<h1 id="header-title"></h1>
+			<a id="signout-btn" class="ui-btn-right ui-btn ui-btn-a ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-power">Sign Out</a>
+			<div class="ui-bar ui-bar-a">
+				<select name="select-native-2" data-mini="true" id="speakers">
+					<option value="all">All</option>
+				</select>
+			</div>
+		</div>
+
+		<div role="main" class="ui-content" id="qna"></div>
+
+		<div data-role="footer" data-theme="b" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a id="tab-qna">Q&A</a></li>
+					<li><a id="tab-list" class="ui-btn-active">List</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
